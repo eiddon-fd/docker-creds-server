@@ -1,5 +1,6 @@
 docker-creds-server
 ===================
+[![Docker Badge](https://dockeri.co/image/eiddonfd/docker-creds-server)](https://hub.docker.com/r/eiddonfd/docker-creds-server)
 
 DC/OS (which uses mesos under the hood) can use docker credentials if a service is configured with an "artifact URI" to download a `.dockercfg` file which contains docker credentials in a standard format.
 
@@ -10,8 +11,10 @@ If you don't have the enterprise edition then you cannot configure secrets on th
 | AUTH  | HTTP auth string base64 encoded docker hub username and password |
 | EMAIL | Email address of corresponding docker hub account                |
 
-Building
--------
+Building Locally
+----------------
+
+Changes to the `main` branch of this repo will be built automatically but you can also build and run this image locally.
 
 ```
 docker build -t docker-creds-server .
